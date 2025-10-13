@@ -17,13 +17,13 @@
  }
 
  /* Header Styles */
- /* Disable hover/focus on mobile screens */
-@media (max-width: 767.98px) {
-  .navbar-nav .nav-link:hover,
-  .navbar-nav .nav-link:focus {
-    color: inherit !important; /* restores default color */
-  }
+ /* Add this media query for mobile screens */
+@media (max-width: 991px) {
+    .navbar-nav .active > .nav-link {
+        color: var(--text-white); /* Remove gold color for active links on mobile */
+    }
 }
+
  .navbar {
      background-color: var(--primary-dark);
      padding: 0.5rem 1rem;
@@ -69,9 +69,6 @@
      color: var(--accent-gold);
  }
 
- /* .navbar-nav .active > .nav-link:after {
-            width: 80%;
-        } */
 
  /* Dropdown Styles */
  .dropdown-menu {
