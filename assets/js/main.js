@@ -1,21 +1,4 @@
-    //  <!-- JavaScript for animations and interactions also for dropdowns start --> 
-$(document).ready(function() {
-    // Enable hover dropdown only for desktop (width > 991px)
-    if ($(window).width() > 991) {
-        $('.navbar .dropdown').hover(function() {
-            $(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
-        }, function() {
-            $(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);
-        });
-    }
-    
-    // For mobile, rely on Bootstrap's default click behavior
-    // No additional code needed - dropdown toggle will work on click
-});
-//  <!-- JavaScript for animations and interactions also for dropdowns End --> 
-
-
-            // our legal service section javascript  for animation start
+  // our legal service section javascript  for animation start
 document.addEventListener('DOMContentLoaded', function() {
     // 1. Select all the elements we want to observe (the cards)
     const serviceCards = document.querySelectorAll('.card');
@@ -153,3 +136,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Check on resize
             window.addEventListener('resize', handleScrollAnimation);
         });
+
+
+        /////////////////////////////////////////////////// 
+
+        

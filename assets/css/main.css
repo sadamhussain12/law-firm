@@ -17,13 +17,6 @@
  }
 
  /* Header Styles */
- /* Add this media query for mobile screens */
-@media (max-width: 991px) {
-    .navbar-nav .active > .nav-link {
-        color: var(--text-white); /* Remove gold color for active links on mobile */
-    }
-}
-
  .navbar {
      background-color: var(--primary-dark);
      padding: 0.5rem 1rem;
@@ -41,7 +34,7 @@
      padding: 0.5rem 1rem;
      transition: var(--transition);
      position: relative;
-     margin-left: 1.5rem;
+     margin-left: 1.5rem;   
  }
 
  .navbar-nav .nav-link:after {
@@ -58,12 +51,12 @@
 
  .navbar-nav .nav-link:hover,
  .navbar-nav .nav-link:focus {
-     color: var(--accent-gold);
+     color: var(--accent-gold); 
  }
 
- .navbar-nav .nav-link:hover:after {
+ /* .navbar-nav .nav-link:hover:after {
      width: 80%;
- }
+ } */
 
  .navbar-nav .active>.nav-link {
      color: var(--accent-gold);
