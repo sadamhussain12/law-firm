@@ -1,0 +1,1154 @@
+ /* header footer css Start  */
+
+ /* CSS Root Variables */
+ :root {
+     --primary-dark: #04012d;
+     --accent-gold: #ce9c2b;
+     --text-white: #ffffff;
+     --text-light: #f8f9fa;
+     --hover-gold: #e6b13e;
+     --transition: all 0.3s ease;
+ }
+
+ body {
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+     color: var(--text-white);
+     background-color: #f8f9fa;
+ }
+
+ /* Header Styles */
+ .navbar {
+     background-color: var(--primary-dark);
+     padding: 0.5rem 1rem;
+     transition: var(--transition);
+ }
+
+ .navbar-brand img {
+     height: 50px;
+     transition: var(--transition);
+ }
+
+ .navbar-nav .nav-link {
+     color: var(--text-white);
+     font-weight: 500;
+     padding: 0.5rem 1rem;
+     transition: var(--transition);
+     position: relative;
+     margin-left: 1.5rem;
+ }
+
+ .navbar-nav .nav-link:after {
+     content: '';
+     position: absolute;
+     width: 0;
+     height: 2px;
+     bottom: 0;
+     left: 50%;
+     /* background-color: var(--accent-gold);  */
+     transition: var(--transition);
+     transform: translateX(-50%);
+ }
+
+ .navbar-nav .nav-link:hover,
+ .navbar-nav .nav-link:focus {
+     color: var(--accent-gold);
+ }
+
+ .navbar-nav .nav-link:hover:after {
+     width: 80%;
+ }
+
+ .navbar-nav .active>.nav-link {
+     color: var(--accent-gold);
+ }
+
+ /* .navbar-nav .active > .nav-link:after {
+            width: 80%;
+        } */
+
+ /* Dropdown Styles */
+ .dropdown-menu {
+     background-color: #ce9c2b;
+     border: none;
+     border-top: 2px solid var(--accent-gold);
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+     margin-top: 0;
+     transition: var(--transition);
+     transform: translateY(10px);
+     opacity: 0;
+     visibility: hidden;
+     display: block;
+ }
+
+ .dropdown:hover .dropdown-menu {
+     transform: translateY(0);
+     opacity: 1;
+     visibility: visible;
+ }
+
+ .dropdown-item {
+     color: var(--text-white);
+     padding: 0.7rem 1.2rem;
+     transition: var(--transition);
+ }
+
+ .dropdown-item:hover,
+ .dropdown-item:focus {
+     background-color: rgba(206, 156, 43, 0.1);
+     color: var(--accent-gold);
+     padding-left: 1.5rem;
+     background-color: white;
+     color: black;
+ }
+
+ /* Phone number styling */
+ .phone-link {
+     color: var(--text-white);
+     font-weight: 500;
+     text-decoration: none;
+     transition: var(--transition);
+     display: inline-flex;
+     align-items: center;
+ }
+
+ .phone-link:hover {
+     color: var(--accent-gold);
+     text-decoration: none;
+     transform: scale(1.05);
+ }
+
+ /* Button Styles */
+ .btn-gold {
+     background-color: var(--accent-gold);
+     color: var(--primary-dark);
+     border: none;
+     font-weight: 600;
+     padding: 0.6rem 1.5rem;
+     transition: var(--transition);
+     position: relative;
+     overflow: hidden;
+ }
+
+ .btn-gold:before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+     transition: var(--transition);
+ }
+
+ .btn-gold:hover {
+     background-color: var(--hover-gold);
+     color: var(--primary-dark);
+     transform: translateY(-3px);
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+ }
+
+ .btn-gold:hover:before {
+     left: 100%;
+ }
+
+ /* Footer Styles */
+ footer {
+     background-color: var(--primary-dark);
+     color: var(--text-white);
+ }
+
+ .footer-top {
+     padding: 3rem 0;
+ }
+
+ .footer-middle {
+     background-color: rgba(0, 0, 0, 0.2);
+     padding: 1.5rem 0;
+ }
+
+ .footer-bottom {
+     padding: 1.5rem 0;
+     border-top: 1px solid rgba(255, 255, 255, 0.1);
+ }
+
+ .footer-title {
+     color: var(--accent-gold);
+     font-weight: 600;
+     margin-bottom: 1rem;
+     position: relative;
+     padding-bottom: 0.5rem;
+ }
+
+
+
+ .footer-links a {
+     color: var(--text-light);
+     text-decoration: none;
+     transition: var(--transition);
+     display: inline-block;
+ }
+
+ .footer-links a:hover {
+     color: var(--accent-gold);
+     transform: translateX(5px);
+ }
+
+ .social-icons a {
+     color: var(--text-light);
+     font-size: 1.2rem;
+     margin-right: 1rem;
+     transition: var(--transition);
+     display: inline-block;
+ }
+
+ .social-icons a:hover {
+     color: var(--accent-gold);
+     transform: translateY(-5px);
+ }
+
+ /* Content Section */
+ .content-section {
+     background-color: var(--text-white);
+     color: #333;
+     padding: 4rem 0;
+     margin: 2rem 0;
+     border-radius: 5px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+ }
+
+ .footer-links_color {
+     color: #ce9c2b;
+ }
+
+ /* Responsive adjustments */
+ @media (max-width: 991.98px) {
+     .navbar-nav .dropdown-menu {
+         background-color: transparent;
+         border: none;
+         box-shadow: none;
+         padding-left: 1rem;
+         transform: none;
+         opacity: 1;
+         visibility: visible;
+         display: none;
+     }
+
+     .dropdown.show .dropdown-menu {
+         display: block;
+     }
+
+     .phone-link {
+         display: block;
+         padding: 0.5rem 0;
+     }
+
+     .navbar-toggler {
+         border-color: var(--text-white);
+     }
+
+     .navbar-toggler-icon {
+         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+     }
+ }
+
+ /* Hover dropdown for desktop */
+ @media (min-width: 992px) {
+     .dropdown:hover .dropdown-menu {
+         display: block;
+     }
+      .dropdown-item:focus {
+     background-color: rgba(206, 156, 43, 0.1);
+     color: var(--accent-gold);
+     padding-left: 1.5rem;
+     background-color: white;
+     color: black;
+ }
+ }
+
+ /* Fade-in animation for page load */
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateY(20px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ .fade-in {
+     animation: fadeIn 0.8s ease forwards;
+ }
+/* Mobile only (max-width: 767px) */
+@media (max-width: 767.98px) {
+  .navbar-nav .nav-link:focus {
+    color: var(--accent-gold);
+    width: 25%;
+  }
+}
+
+/* Tablet and up (≥768px) */
+@media (min-width: 768px) {
+.navbar-nav .nav-link:focus {
+    color: var(--accent-gold);
+    width: 25%;
+  }
+}
+ /* header footer css End  */
+
+
+
+/* Hero Section  css start landing page*/
+   .hero-section {
+            position: relative;
+            height: 100vh;
+            /* REDUCED HEIGHT */
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+ .hero-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(4, 1, 45, 0.7);
+            z-index: -1;
+        }
+
+        .hero-content {
+            color: var(--text-white);
+            text-align: center;
+            z-index: 1;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--accent-gold);
+            /* margin-top: 3rem;  */
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* Hero Section  css End landing page*/
+
+
+
+/* our legal service section css start  */
+  /*
+         * ======================================
+         * 2. Layout and Structure Styles
+         * ======================================
+         */
+        /* Main Content Wrapper - CRITICAL: Pushes content down past the hero height */
+        /* NOTE: You would need a separate .hero-section for the 70vh margin-top to make sense */
+        .main-content-wrapper {
+            position: relative; 
+            z-index: 10; 
+            background-color: var(--text-white); 
+            
+            /* MODIFIED: Setting a margin top. In a real scenario, this matches hero height */
+            margin-top: 5rem; /* Reduced for demo visibility */
+            
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        /* Content Section - Simplified */
+        .content-section {
+            color: #333;
+            padding: 2rem 0; 
+        }
+
+        /*
+         * ======================================
+         * 3. Card Styles and Initial State (Crucial for Animation)
+         * ======================================
+         */
+        .card {
+            transition: var(--transition);
+            opacity: 0; /* Initial state: completely hidden */
+            /* The initial transform for the bounce-in effect is handled by the JS/CSS animation, 
+               but we set the opacity to 0 here to hide it before the animation starts */
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /*
+         * ======================================
+         * 4. Directional Bounce Animations
+         * ======================================
+         */
+        @keyframes bounceLeft {
+            0% { 
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            60% { 
+                opacity: 1;
+                transform: translateX(10px);
+            }
+            100% { 
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounceTop {
+            0% { 
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            60% { 
+                opacity: 1;
+                transform: translateY(10px);
+            }
+            100% { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounceRight {
+            0% { 
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            60% { 
+                opacity: 1;
+                transform: translateX(-10px);
+            }
+            100% { 
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounceBottom {
+            0% { 
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            60% { 
+                opacity: 1;
+                transform: translateY(-10px);
+            }
+            100% { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /*
+         * ======================================
+         * 5. Animation Classes (Applied by JavaScript)
+         * ======================================
+         */
+        .bounce-left {
+            animation: bounceLeft 0.8s ease forwards;
+        }
+
+        .bounce-top {
+            animation: bounceTop 0.8s ease forwards;
+        }
+
+        .bounce-right {
+            animation: bounceRight 0.8s ease forwards;
+        }
+
+        .bounce-bottom {
+            animation: bounceBottom 0.8s ease forwards;
+        }
+
+        /* Animation Delays for Staggered Effect */
+        .animate-delay-1 {
+            animation-delay: 0.2s;
+        }
+
+        .animate-delay-2 {
+            animation-delay: 0.4s;
+        }
+
+        .animate-delay-3 {
+            animation-delay: 0.6s;
+        }
+
+/* our legal service section css end  */
+
+
+/* About us section css start  */
+
+ /* Animation classes */
+        .animate-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .animate-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .animate-left.animated {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .animate-right.animated {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .accent-color {
+            color: #CE9C2B;
+        }
+        
+        .section-boxed {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 80px 0;
+        }
+        
+        /* Ensure proper spacing on mobile */
+        @media (max-width: 767.98px) {
+            .section-boxed {
+                padding: 50px 0;
+            }
+            
+            .mobile-order-1 {
+                order: 1;
+            }
+            
+            .mobile-order-2 {
+                order: 2;
+            }
+        }
+/* About us section css End  */
+
+.meet-title {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: black; 
+     margin-top: 3rem;
+}
+.meet_content {
+    color: black;
+    font-size: 2.5rem;
+}
+
+
+/* Justice Integrity Results section css start  */
+      .values-section {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+        
+        .values-heading {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+
+            color: black;
+        }
+        
+        .values-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            color: #555;
+        }
+        /* Justice Integrity Results section css End  */
+
+
+        /* book a consultant css start  */
+        .consultant_title {
+                color: black;
+                font-size: 3rem;
+            }
+        .accent-color {
+            color: #CE9C2B;
+        }
+        
+        .consultation-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .form-control {
+            border-radius: 4px;
+            border: 1px solid black;
+            padding: 12px 15px;
+            font-size: 14px;
+        }
+        
+        .form-control:focus {
+            border-color: #CE9C2B;
+            box-shadow: 0 0 0 0.2rem rgba(206, 156, 43, 0.25);
+        }
+        
+        .btn-consultation {
+            background-color: #CE9C2B;
+            border-color: #CE9C2B;
+            color: white;
+            padding: 12px 30px;
+            font-weight: 500;
+            border-radius: 4px;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-consultation:hover {
+            background-color: #b38725;
+            border-color: #b38725;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* book a consultant css End  */
+
+       /* ///////////////////// About page css strat ////////////////////////  */
+   /* Animation classes with slower timing */
+        .slide-from-left {
+            opacity: 0;
+            transform: translateX(-80px);
+            transition: all 1.2s ease-out;
+        }
+        
+        .slide-from-right {
+            opacity: 0;
+            transform: translateX(80px);
+            transition: all 1.2s ease-out;
+        }
+        
+        .slide-from-bottom {
+            opacity: 0;
+            transform: translateY(80px);
+            transition: all 1.2s ease-out;
+        }
+        
+        .slide-from-left.visible,
+        .slide-from-right.visible,
+        .slide-from-bottom.visible {
+            opacity: 1;
+            transform: translate(0);
+        }
+        
+        .accent-gold {
+            color: #CE9C2B;
+        }
+        
+        /* Section Styling */
+        
+        
+        .welcome-area {
+            padding: 90px 0;
+            background-color: #04012d;
+        }
+        
+        .features-grid {
+            padding: 90px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .value-display {
+            padding: 90px 0;
+            background-color: #ffffff;
+        }
+        
+      
+        
+        .feature-card {
+            padding: 35px 25px;
+            text-align: center;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            height: 100%;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            border-left: 4px solid #CE9C2B;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .feature-card h3 {
+            color: #2c3e50;
+            margin-bottom: 18px;
+            font-weight: 700;
+            font-size: 1.4rem;
+        }
+        
+        .feature-card p {
+            color: #5a6c7d;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+        
+        .gold-line {
+            height: 3px;
+            background: linear-gradient(90deg, #CE9C2B, #e8b650);
+            width: 38%;
+            margin: 25px 0;
+            border-radius: 2px;
+        }
+        
+        .section-title {
+            font-size: 3rem;
+            font-weight: 700;
+            /* margin-bottom: 1.5rem;  */
+            color: #CE9C2B;
+        }
+        
+        .lead-text {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: white;
+        }
+        
+        .contact-cta .section-title,
+        .contact-cta .lead-text {
+            color: white;
+        }
+        
+        .contact-cta .accent-gold {
+            color: #e8b650;
+        }
+        
+        .img-frame {
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            overflow: hidden;
+            transition: transform 0.4s ease;
+        }
+        
+        .img-frame:hover {
+            transform: scale(1.02);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .hero-main {
+                padding: 100px 0 60px;
+            }
+            
+            .welcome-area,
+            .features-grid,
+            .value-display,
+            .contact-cta {
+                padding: 60px 0;
+            }
+        }
+
+       /* ///////////////////// About page css End ////////////////////////  */
+
+       /* ///////////////////// our blog page css start ////////////////////////  */
+ .blogs-hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .blogs-hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        
+        /* Blog Section */
+        .blogs-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .blogs-heading {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .blogs-heading h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .blogs-heading h2:after {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 3px;
+            background-color: #d4af37;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .blogs-heading p {
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+        
+        /* Blog Cards */
+        .blog-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            height: 100%;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .blog-img {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .blog-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .blog-card:hover .blog-img img {
+            transform: scale(1.05);
+        }
+        
+        .blog-category {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #d4af37;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            z-index: 2;
+        }
+        
+        .blog-content {
+            padding: 25px;
+        }
+        
+        .blog-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            line-height: 1.4;
+            font-weight: 600;
+        }
+        
+        .blog-excerpt {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        .blog-read-more {
+            color: #d4af37;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .blog-read-more:hover {
+            color: #b8941f;
+            text-decoration: none;
+        }
+        
+        /* Animation classes */
+        .blogs-slide-from-bottom {
+            animation: blogsSlideFromBottom 1s ease-out;
+        }
+        
+        .blogs-stagger-animation > * {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: blogsFadeInUp 0.6s ease forwards;
+        }
+        
+        .blogs-stagger-animation > *:nth-child(1) { animation-delay: 0.1s; }
+        .blogs-stagger-animation > *:nth-child(2) { animation-delay: 0.2s; }
+        .blogs-stagger-animation > *:nth-child(3) { animation-delay: 0.3s; }
+        .blogs-stagger-animation > *:nth-child(4) { animation-delay: 0.4s; }
+        .blogs-stagger-animation > *:nth-child(5) { animation-delay: 0.5s; }
+        .blogs-stagger-animation > *:nth-child(6) { animation-delay: 0.6s; }
+        
+        @keyframes blogsSlideFromBottom {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes blogsFadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+       /* ///////////////////// our blog page css End ////////////////////////  */
+
+
+
+       /*///////////////////// contact us page css strat /////////////////// */
+
+/* address email and phone number section css strat  */
+.contact-section {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .contact-card {
+            background: #ce9c2b;
+            border-radius: 8px;
+            padding: 30px 20px;
+            height: 100%;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .contact-icon {
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .contact-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: black;
+        }
+        
+        .contact-info {
+            color: white;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        
+        /* Bounce animation */
+        @keyframes bounceInLeft {
+            from, 60%, 75%, 90%, to {
+                animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            }
+            0% {
+                opacity: 0;
+                transform: translate3d(-3000px, 0, 0);
+            }
+            60% {
+                opacity: 1;
+                transform: translate3d(25px, 0, 0);
+            }
+            75% {
+                transform: translate3d(-10px, 0, 0);
+            }
+            90% {
+                transform: translate3d(5px, 0, 0);
+            }
+            to {
+                transform: none;
+                opacity: 1;
+            }
+        }
+        
+        .bounce-in-left {
+            animation: bounceInLeft 1s;
+        }
+        /* address email and phone number section css End  */
+
+        /*////////////////  form and pap section css strat ////////// */
+         .contact-form-wrapper {
+            background: #10173f;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .form-control {
+            border-radius: 4px;
+            padding: 12px 15px;
+            border: 1px solid #ced4da;
+            margin-bottom: 20px;
+        }
+        
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+        }
+        
+        .form-label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: white;
+        }
+        
+        .required-field::after {
+            content: "*";
+            color: yellow;
+            margin-left: 4px;
+        }
+        
+        .map-container {
+            height: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 500px;
+            border: none;
+        }
+        
+        .btn-submit {
+            background-color: #ce9c2b;
+            border-color: #007bff;
+            color: white;
+            padding: 12px 30px;
+            font-weight: 600;
+            border-radius: 4px;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-submit:hover {
+            background-color: white;
+            border-color: black;
+            transform: translateY(-2px);
+        }
+        
+        .terms-notice {
+            background-color: #343a40;
+            color: white;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+        
+        .terms-checkbox {
+            margin-bottom: 20px;
+        }
+        
+        .terms-checkbox label {
+            margin-left: 8px;
+            font-weight: normal;
+        }
+        
+        .recaptcha-container {
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 767.98px) {
+            .contact-form-wrapper {
+                padding: 25px;
+                margin-bottom: 30px;
+            }
+            
+            .map-container iframe {
+                min-height: 300px;
+            }
+        }
+        /*////////// form and map section css end ///////////  */
+
+
+       /*///////////////////// contact us page css End /////////////////// */
+
+/* /////////////////////////// Private Funding page css start //////////////////  */
+/* Representation at court */
+.court-section {
+  background-color: #f9f9fb;
+  color: #111;
+  /* font-family: 'Georgia', 'Times New Roman', serif;  */
+  line-height: 1.8;
+}
+
+/* Heading */
+.court-heading {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #0c0633;
+  margin-bottom: 2rem;
+}
+
+/* Paragraph Styling */
+.court-section p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .court-heading {
+    font-size: 2rem;
+  }
+}
+
+/* /////////////////////////// Private Funding page css End  //////////////////  */
