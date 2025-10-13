@@ -17,6 +17,13 @@
  }
 
  /* Header Styles */
+ /* Disable hover/focus on mobile screens */
+@media (max-width: 767.98px) {
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus {
+    color: inherit !important; /* restores default color */
+  }
+}
  .navbar {
      background-color: var(--primary-dark);
      padding: 0.5rem 1rem;
