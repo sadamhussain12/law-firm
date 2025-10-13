@@ -494,6 +494,9 @@
 /* About us section css start  */
 
  /* Animation classes */
+        .title_color{
+            color: black;
+        }
         .animate-left {
             opacity: 0;
             transform: translateX(-50px);
