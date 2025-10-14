@@ -42,8 +42,8 @@
      position: absolute;
      width: 0;
      height: 2px;
-     bottom: 0;
-     left: 50%;
+     bottom: 14px;
+     left: 100%;
      /* background-color: var(--accent-gold);  */
      transition: var(--transition);
      transform: translateX(-50%);
@@ -295,7 +295,7 @@
 @media (min-width: 768px) {
 .navbar-nav .nav-link:focus {
     color: var(--accent-gold);
-    width: 25%;
+    /* width: 25%;  */
   }
 }
  /* header footer css End  */
@@ -568,7 +568,7 @@
         }
         
         .values-heading {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 600;
             margin-bottom: 1.5rem;
 
