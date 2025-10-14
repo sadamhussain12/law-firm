@@ -97,6 +97,11 @@
      background-color: white;
      color: black;
  }
+ @media (max-width: 991.98px) {
+    .navbar-brand img {
+        margin-left: 1.7rem;
+    }
+}
 
  /* Phone number styling */
  .phone-link {
