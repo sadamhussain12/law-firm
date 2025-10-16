@@ -7,27 +7,54 @@
     <title>Law Firm</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
-    <link rel="stylesheet" href="assets/css/main.css"> 
+    <link rel="stylesheet" href="assets/css/main.css">
 
     <style>
         /* --- UK LAW FIRM AESTHETIC VARIABLES --- */
         :root {
-            --primary-dark: #1F2E3A; /* Deep Charcoal/Navy for text and backgrounds */
-            --accent-gold: #A88F5D; /* Muted, professional gold/bronze */
-            --text-light: #f8f9fa; /* Off-white for light text on dark backgrounds */
-            --light-bg: #FFFFFF; /* Crisp white for main content background */
-            --secondary-text: #495057; /* Dark gray for body text */
-            --border-color: #e9ecef; /* Light border color */
+            --primary-dark: #1F2E3A;
+            /* Deep Charcoal/Navy for text and backgrounds */
+            --accent-gold: #A88F5D;
+            /* Muted, professional gold/bronze */
+            --text-light: #f8f9fa;
+            /* Off-white for light text on dark backgrounds */
+            --light-bg: #FFFFFF;
+            /* Crisp white for main content background */
+            --secondary-text: #495057;
+            /* Dark gray for body text */
+            --border-color: #e9ecef;
+            /* Light border color */
         }
 
         /* --- Global Resets and Utility Classes --- */
         body {
-            font-family: 'Georgia', serif; /* Use a classic, authoritative font or stick to Bootstrap's sans-serif stack, but for a law firm, a serif font feels more established. */
+            font-family: 'Georgia', serif;
+            /* Use a classic, authoritative font or stick to Bootstrap's sans-serif stack, but for a law firm, a serif font feels more established. */
             color: var(--secondary-text);
         }
 
-        .title_color { color: var(--primary-dark) !important; }
-        .accent-color { color: var(--accent-gold) !important; }
+        /* ////////////////////// logo text temprory start ///////////  */
+
+        .logo_text {
+            color: wheat;
+            font-size: 20px;
+        }
+
+        .logo_text:hover {
+            color: #fff !important;
+            /* changes color to white on hover */
+            text-decoration: none;
+            /* ensures no underline */
+        }
+
+        /* ////////////////////// logo text temprory End ///////////  */
+        .title_color {
+            color: var(--primary-dark) !important;
+        }
+
+        .accent-color {
+            color: var(--accent-gold) !important;
+        }
 
         .btn-gold {
             background-color: var(--accent-gold);
@@ -39,7 +66,8 @@
             transition: all 0.3s ease;
         }
 
-        .btn-gold:hover, .btn-gold:focus {
+        .btn-gold:hover,
+        .btn-gold:focus {
             background-color: var(--primary-dark);
             border-color: var(--primary-dark);
             color: white;
@@ -56,7 +84,8 @@
             width: 100%;
         }
 
-        .btn-consultation:hover, .btn-consultation:focus {
+        .btn-consultation:hover,
+        .btn-consultation:focus {
             background-color: var(--accent-gold);
             border-color: var(--accent-gold);
             color: white;
@@ -64,12 +93,15 @@
 
         /* --- Header/Navigation Styles --- */
         header {
-            background-color: var(--primary-dark); /* Solid, professional dark background */
+            background-color: var(--primary-dark);
+            /* Solid, professional dark background */
         }
-        
+
         .navbar-brand img {
-            max-height: 40px; /* Control logo size */
-            filter: brightness(0) invert(1) drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)); /* Ensures a white logo stands out on dark navy */
+            max-height: 40px;
+            /* Control logo size */
+            filter: brightness(0) invert(1) drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+            /* Ensures a white logo stands out on dark navy */
         }
 
         .navbar-nav .nav-link {
@@ -82,7 +114,8 @@
         .navbar-nav .nav-link:hover,
         .navbar-nav .nav-item.active .nav-link {
             color: var(--accent-gold) !important;
-            background-color: rgba(255, 255, 255, 0.05); /* Subtle hover effect */
+            background-color: rgba(255, 255, 255, 0.05);
+            /* Subtle hover effect */
         }
 
         .dropdown-menu {
@@ -114,30 +147,37 @@
 
         /* --- Hero Section Styles (blogs-hero is used) --- */
         .blogs-hero {
-            position: relative; /* Set to relative for standard flow, keeping the background fixed is fine */
-            padding: 180px 0 140px; /* More vertical padding */
+            position: relative;
+            /* Set to relative for standard flow, keeping the background fixed is fine */
+            padding: 180px 0 140px;
+            /* More vertical padding */
             color: white;
             text-align: center;
             /* Make sure to replace the placeholder AVIF image with a high-quality, professional image */
             background-image: linear-gradient(rgba(31, 46, 58, 0.75), rgba(31, 46, 58, 0.75)),
-                              url('assets/images/photo-1589829545856-d10d557cf95f.avif'); /* Modern law office interior */
+                url('assets/images/photo-1589829545856-d10d557cf95f.avif');
+            /* Modern law office interior */
             background-size: cover;
             background-position: center center;
             background-attachment: fixed;
-            height: auto; /* Allow content to dictate height */
-            min-height: 70vh; /* Minimum height for impact */
+            height: auto;
+            /* Allow content to dictate height */
+            min-height: 70vh;
+            /* Minimum height for impact */
             display: flex;
             align-items: center;
         }
-        
+
         .blogs-slide-from-bottom {
-            animation: none; /* Remove custom animation if not defined, or ensure it's smooth */
+            animation: none;
+            /* Remove custom animation if not defined, or ensure it's smooth */
         }
 
         .blogs-hero-title {
             font-size: 3.5rem;
             font-weight: 700;
-            color: white; /* Title should be white for contrast */
+            color: white;
+            /* Title should be white for contrast */
             text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
         }
 
@@ -152,11 +192,12 @@
                 min-height: 50vh;
                 padding: 150px 0 100px;
             }
+
             .blogs-hero-title {
                 font-size: 2.5rem;
             }
         }
-        
+
         /* --- Services/Card Section Styles (main-content-wrapper) --- */
         .main-content-wrapper {
             padding-top: 50px;
@@ -205,24 +246,37 @@
         .section-boxed {
             padding: 80px 0;
         }
-        
+
         .section-boxed h2 {
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
         }
 
-        .mobile-order-1 { order: 1; }
-        .mobile-order-2 { order: 2; }
+        .mobile-order-1 {
+            order: 1;
+        }
+
+        .mobile-order-2 {
+            order: 2;
+        }
+
         @media (min-width: 992px) {
-            .mobile-order-1 { order: 0; }
-            .mobile-order-2 { order: 0; }
+            .mobile-order-1 {
+                order: 0;
+            }
+
+            .mobile-order-2 {
+                order: 0;
+            }
         }
 
         /* --- Meet the Team Section --- */
         .bg-light {
-            background-color: #f4f4f4 !important; /* Slightly softer gray background */
+            background-color: #f4f4f4 !important;
+            /* Slightly softer gray background */
         }
+
         .meet_content {
             font-size: 2rem;
             font-weight: 600;
@@ -232,9 +286,10 @@
         /* --- Consultation Section --- */
         .consultation-section {
             padding: 80px 0;
-            background-color: var(--light-bg); /* Keep form background clean */
+            background-color: var(--light-bg);
+            /* Keep form background clean */
         }
-        
+
         .consultant_title {
             font-size: 2.5rem;
             font-weight: 700;
@@ -272,7 +327,8 @@
             margin-bottom: 20px;
         }
 
-        .footer-links li, .footer-links a {
+        .footer-links li,
+        .footer-links a {
             color: rgba(255, 255, 255, 0.7);
             font-size: 0.95rem;
             transition: color 0.3s ease;
@@ -308,13 +364,13 @@
             padding: 15px 0;
             font-size: 0.85rem;
         }
-        
+
         .footer-bottom a {
             color: white;
             text-decoration: underline;
         }
     </style>
-    </head>
+</head>
 
 <body>
     <header>
@@ -327,16 +383,19 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                     </div>
+                    <!-- logo  -->
                     <div class="col-8 col-lg-2 text-center text-lg-left">
-                        <a class="navbar-brand" href="#">
+                        <!-- <a class="navbar-brand" href="#">
                             <img src="assets/images/5ee6453f04a8813970b28f26_Alumination_Logo-White.png" alt="Law Firm" class="img-fluid">
-                            </a>
-
+                            </a> -->
+                        <a class="logo_text" href="#">
+                            <i class="fas fa-balance-scale"></i> Justice Law Firm
+                        </a>
                     </div>
 
                     <div class="col-2 d-lg-none text-right">
                         <a href="tel:01582733330" class="phone-link">
-                           <i class="fas fa-phone-alt"></i>
+                            <i class="fas fa-phone-alt"></i>
                         </a>
                     </div>
 
@@ -350,12 +409,15 @@
                                     <a class="nav-link" href="about_us.html">About Us</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="areaOfPracticeDropdown" role="button" data-toggle="dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="areaOfPracticeDropdown"
+                                        role="button" data-toggle="dropdown">
                                         Area of Practice
                                     </a>
                                     <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="Commissioners_Oaths.html">Commissioners for Oaths</a>
-                                        <a class="dropdown-item" href="General_criminal_law.html">General Criminal Law</a>
+                                        <a class="dropdown-item" href="Commissioners_Oaths.html">Commissioners for
+                                            Oaths</a>
+                                        <a class="dropdown-item" href="General_criminal_law.html">General Criminal
+                                            Law</a>
                                         <a class="dropdown-item" href="#">Personal Injury Law</a>
                                         <a class="dropdown-item" href="#">Dispute Resolution</a>
                                         <a class="dropdown-item" href="#">Taxi Licensing</a>
@@ -363,7 +425,8 @@
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="forClientsDropdown" role="button" data-toggle="dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="forClientsDropdown" role="button"
+                                        data-toggle="dropdown">
                                         For Clients
                                     </a>
                                     <div class="dropdown-menu">
@@ -371,7 +434,8 @@
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="ourFeesDropdown" role="button" data-toggle="dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="ourFeesDropdown" role="button"
+                                        data-toggle="dropdown">
                                         Our Fees
                                     </a>
                                     <div class="dropdown-menu">
@@ -406,21 +470,23 @@
                 <div class="col-12 text-center">
                     <div class="blogs-slide-from-bottom">
                         <h1 class="blogs-hero-title mb-3">Expert Legal Counsel You Can Trust.</h1>
-                        <p class="hero-subtitle text-light">Expert legal support in criminal law, personal injury & disputes. Law Firm in Luton—justice, integrity, results you can count on.</p>
-                        <a href="#book" class="btn btn-gold">Book a Consultation</a> 
+                        <p class="hero-subtitle text-light">Expert legal support in criminal law, personal injury &
+                            disputes. Law Firm in Luton—justice, integrity, results you can count on.</p>
+                        <a href="#book" class="btn btn-gold">Book a Consultation</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-<main class="main-content-wrapper">
+    <main class="main-content-wrapper">
         <div class="container">
             <div class="content-section text-center">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        <h1 class="mb-4 title_color">Our Areas of Expertise</h1> 
-                        <p class="lead mb-4">We provide comprehensive legal solutions tailored to your specific needs with professionalism and dedication.</p>
+                        <h1 class="mb-4 title_color">Our Areas of Expertise</h1>
+                        <p class="lead mb-4">We provide comprehensive legal solutions tailored to your specific needs
+                            with professionalism and dedication.</p>
                     </div>
                 </div>
             </div>
@@ -432,7 +498,8 @@
                         <div class="card-body text-center">
                             <i class="fas fa-balance-scale fa-3x mb-3 accent-color"></i>
                             <h5 class="card-title title_color">Criminal Law</h5>
-                            <p class="card-text">Expert defense for all criminal matters with personalized legal strategies.</p>
+                            <p class="card-text">Expert defense for all criminal matters with personalized legal
+                                strategies.</p>
                         </div>
                     </div>
                 </div>
@@ -442,7 +509,8 @@
                         <div class="card-body text-center">
                             <i class="fas fa-user-injured fa-3x mb-3 accent-color"></i>
                             <h5 class="card-title title_color">Personal Injury</h5>
-                            <p class="card-text">Comprehensive support for injury claims to secure the compensation you deserve.</p>
+                            <p class="card-text">Comprehensive support for injury claims to secure the compensation you
+                                deserve.</p>
                         </div>
                     </div>
                 </div>
@@ -453,7 +521,8 @@
                         <div class="card-body text-center">
                             <i class="fas fa-handshake fa-3x mb-3 accent-color"></i>
                             <h5 class="card-title title_color">Dispute Resolution</h5>
-                            <p class="card-text">Effective solutions for legal disputes through negotiation and mediation.</p>
+                            <p class="card-text">Effective solutions for legal disputes through negotiation and
+                                mediation.</p>
                         </div>
                     </div>
                 </div>
@@ -466,7 +535,8 @@
                         <div class="card-body text-center">
                             <i class="fas fa-home fa-3x mb-3 accent-color"></i>
                             <h5 class="card-title title_color">Property Law</h5>
-                            <p class="card-text">Professional guidance for property transactions and real estate matters.</p>
+                            <p class="card-text">Professional guidance for property transactions and real estate
+                                matters.</p>
                         </div>
                     </div>
                 </div>
@@ -477,7 +547,8 @@
                         <div class="card-body text-center">
                             <i class="fas fa-file-contract fa-3x mb-3 accent-color"></i>
                             <h5 class="card-title title_color">Contract Law</h5>
-                            <p class="card-text">Drafting, reviewing, and negotiating contracts to protect your interests.</p>
+                            <p class="card-text">Drafting, reviewing, and negotiating contracts to protect your
+                                interests.</p>
                         </div>
                     </div>
                 </div>
@@ -529,7 +600,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 mb-4 mb-lg-0 mobile-order-2">
                     <div class="animate-left">
-                        <img src="assets/images/photo-1589391886645-d51941baf7fb.avif" alt="Law Firm Office Interior" class="img-fluid w-100 rounded shadow">
+                        <img src="assets/images/photo-1589391886645-d51941baf7fb.avif" alt="Law Firm Office Interior"
+                            class="img-fluid w-100 rounded shadow">
                     </div>
                 </div>
 
@@ -537,11 +609,13 @@
                     <div class="animate-right">
                         <h2 class="mb-4 title_color">About us<span class="accent-color">.</span></h2>
                         <div>
-                            <p class="mb-3 title_color">Established in 2015, Law Firm is a reputable law firm based in **Luton**, known
+                            <p class="mb-3 title_color">Established in 2015, Law Firm is a reputable law firm based in
+                                **Luton**, known
                                 for our dedication to excellence and client satisfaction. Specialising in criminal law,
                                 personal injury, and dispute resolution, our team is committed to providing tailored
                                 legal solutions with integrity and compassion.</p>
-                            <p class="title_color">With a passion for justice and a track record of success, we strive to empower our
+                            <p class="title_color">With a passion for justice and a track record of success, we strive
+                                to empower our
                                 clients and build lasting relationships based on trust and mutual respect.</p>
                         </div>
                     </div>
@@ -551,17 +625,22 @@
     </section>
     <div class="container-fluid bg-light">
         <section class="section-boxed">
-             <h2 class="mb-4 text-center mt-4 meet_content">Meet the team<span class="accent-color" style="font-size: 4rem;">.</span></h2>
-            <div class="container"> <div class="row">
+            <h2 class="mb-4 text-center mt-4 meet_content">Meet the team<span class="accent-color"
+                    style="font-size: 4rem;">.</span></h2>
+            <div class="container">
+                <div class="row">
                     <div class="col-lg-6 col-md-12 mb-5">
                         <div class="animate-left">
                             <img src="assets/images/Get-in-touch-img.jpg" alt="Munawar Qurban - Professional Lawyer"
                                 class="img-fluid w-100 rounded shadow">
                         </div>
                         <h3 class="mb-2 text-center mt-4 meet_content">Law Firm–Focused</h3>
-                        <p class="text-center" style="color: var(--secondary-text); font-weight: 600;">Meet Our Legal Experts</p>
+                        <p class="text-center" style="color: var(--secondary-text); font-weight: 600;">Meet Our Legal
+                            Experts</p>
                         <div>
-                            <p class="mb-3 text-dark text-center">Our experienced solicitors and legal professionals are dedicated to offering practical advice, reliable representation, and unwavering support to our clients.</p>
+                            <p class="mb-3 text-dark text-center">Our experienced solicitors and legal professionals are
+                                dedicated to offering practical advice, reliable representation, and unwavering support
+                                to our clients.</p>
                         </div>
                     </div>
 
@@ -571,9 +650,12 @@
                                 class="img-fluid w-100 rounded shadow">
                         </div>
                         <h3 class="mb-2 text-center mt-4 meet_content">Modern & Approachable</h3>
-                        <p class="text-center" style="color: var(--secondary-text); font-weight: 600;">The Faces of Our Firm</p>
+                        <p class="text-center" style="color: var(--secondary-text); font-weight: 600;">The Faces of Our
+                            Firm</p>
                         <div>
-                            <p class="mb-3 text-dark text-center">Get to know the professionals who make our firm exceptional. Each team member brings talent, dedication, and a shared passion for delivering results that matter.</p>
+                            <p class="mb-3 text-dark text-center">Get to know the professionals who make our firm
+                                exceptional. Each team member brings talent, dedication, and a shared passion for
+                                delivering results that matter.</p>
                         </div>
                     </div>
                 </div>
@@ -587,7 +669,10 @@
                 <div class="col-lg-8 col-md-10">
                     <div class="text-center mb-5">
                         <h2 class="mb-3 consultant_title">Book a Consultation<span class="accent-color">.</span></h2>
-                        <p class="lead text-dark">At Law Firm, we provide expert legal advice to help you navigate your legal challenges. To schedule a consultation, please fill out the form below, and a member of our team will get back to you promptly. Please note that there is a fee for consultations, and we will provide you with the cost details upon confirmation.</p>
+                        <p class="lead text-dark">At Law Firm, we provide expert legal advice to help you navigate your
+                            legal challenges. To schedule a consultation, please fill out the form below, and a member
+                            of our team will get back to you promptly. Please note that there is a fee for
+                            consultations, and we will provide you with the cost details upon confirmation.</p>
                     </div>
 
                     <form method="post" name="Consultation Form" aria-label="Consultation Form">
@@ -603,10 +688,11 @@
                             </div>
 
                             <div class="form-group col-md-6">
-                                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                                <input type="email" name="email" class="form-control" placeholder="Email Address"
+                                    required>
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <select class="form-control" name="area_of_law" required>
                                 <option value="" disabled selected>Select Area of Law</option>
@@ -622,8 +708,8 @@
 
 
                         <div class="form-group">
-                            <textarea class="form-control" name="message" rows="4" placeholder="Briefly describe your legal challenge"
-                                required></textarea>
+                            <textarea class="form-control" name="message" rows="4"
+                                placeholder="Briefly describe your legal challenge" required></textarea>
                         </div>
 
                         <div class="form-group">
@@ -637,91 +723,94 @@
         </div>
     </section>
 
-<footer>
-    <div class="footer-top">
-        <div class="container"> <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h3 class="footer-title">Law Firm is about you.</h3>
-                    <p class="mb-4" style="color: rgba(255, 255, 255, 0.8);">Let's talk about your situation and find a way to change it.</p>
-                    <a href="#book" class="btn btn-gold">Contact Us</a>
-                </div>
-
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <h3 class="footer-title">Contact Details</h3>
-                    <ul class="list-unstyled footer-links">
-                        <li class="mb-3">
-                            <i class="fas fa-map-marker-alt mr-2 footer-links_color"></i>
-                            Suite 1B Fourth Floor, AW House, 6-8 Stuart Street,<br>
-                            Luton, Bedfordshire, LU1 2SJ
-                        </li>
-                        <li class="mb-3">
-                            <i class="fas fa-envelope mr-2 footer-links_color"></i>
-                            office@mi-law.co.uk
-                        </li>
-                        <li class="mb-3">
-                            <i class="fas fa-phone-alt mr-2 footer-links_color"></i>
-                            01582 733 330
-                        </li>
-                    </ul>
-
-                    <div class="social-icons mt-4">
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h3 class="footer-title">Law Firm is about you.</h3>
+                        <p class="mb-4" style="color: rgba(255, 255, 255, 0.8);">Let's talk about your situation and
+                            find a way to change it.</p>
+                        <a href="#book" class="btn btn-gold">Contact Us</a>
                     </div>
-                </div>
 
-                <div class="col-md-4 text-md-left">
-                    <h3 class="footer-title">Accreditations</h3>
-                    <div class="mb-4">
-                        <img src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="SRA Accreditation" class="img-fluid rounded"
-                            style="max-height: 150px;">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h3 class="footer-title">Contact Details</h3>
+                        <ul class="list-unstyled footer-links">
+                            <li class="mb-3">
+                                <i class="fas fa-map-marker-alt mr-2 footer-links_color"></i>
+                                Suite 1B Fourth Floor, AW House, 6-8 Stuart Street,<br>
+                                Luton, Bedfordshire, LU1 2SJ
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-envelope mr-2 footer-links_color"></i>
+                                office@mi-law.co.uk
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-phone-alt mr-2 footer-links_color"></i>
+                                01582 733 330
+                            </li>
+                        </ul>
+
+                        <div class="social-icons mt-4">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        </div>
                     </div>
-                    <div style="max-width: 275px; display: inline-block;">
-                        <div
-                            style="background: var(--accent-gold); border: 1px solid var(--accent-gold); padding: 10px; text-align: center; color: var(--primary-dark); font-weight: 600; border-radius: 4px;">
-                            SRA Digital Badge Verified
+
+                    <div class="col-md-4 text-md-left">
+                        <h3 class="footer-title">Accreditations</h3>
+                        <div class="mb-4">
+                            <img src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                                alt="SRA Accreditation" class="img-fluid rounded" style="max-height: 150px;">
+                        </div>
+                        <div style="max-width: 275px; display: inline-block;">
+                            <div
+                                style="background: var(--accent-gold); border: 1px solid var(--accent-gold); padding: 10px; text-align: center; color: var(--primary-dark); font-weight: 600; border-radius: 4px;">
+                                SRA Digital Badge Verified
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="footer-middle">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 mb-2 mb-md-0">
-                    <p class="mb-0" style="color: rgba(255, 255, 255, 0.7);">Law Firm is authorised and regulated by the Solicitors Regulation Authority.</p>
-                </div>
-                <div class="col-md-6 text-md-right">
-                    <ul class="list-inline mb-0 footer-links">
-                        <li class="list-inline-item mr-3"><a href="#">Privacy Policy</a></li>
-                        <li class="list-inline-item mr-3"><a href="#">Cookies Policy</a></li>
-                        <li class="list-inline-item"><a href="#">Website Terms</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p class="mb-0" style="color: rgba(255, 255, 255, 0.6);">Copyright © 2024 Law Firm | Designed By <a href="https://alumination.co.uk/"
-                            class="accent-color">Alumination</a></p>
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-2 mb-md-0">
+                        <p class="mb-0" style="color: rgba(255, 255, 255, 0.7);">Law Firm is authorised and regulated by
+                            the Solicitors Regulation Authority.</p>
+                    </div>
+                    <div class="col-md-6 text-md-right">
+                        <ul class="list-inline mb-0 footer-links">
+                            <li class="list-inline-item mr-3"><a href="#">Privacy Policy</a></li>
+                            <li class="list-inline-item mr-3"><a href="#">Cookies Policy</a></li>
+                            <li class="list-inline-item"><a href="#">Website Terms</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="mb-0" style="color: rgba(255, 255, 255, 0.6);">Copyright © 2024 Law Firm | Designed By
+                            <a href="https://alumination.co.uk/" class="accent-color">Alumination</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-<script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
