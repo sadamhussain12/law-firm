@@ -66,7 +66,7 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services Section start-->
     <section class="services-section">
         <div class="container">
             <h2 class="section-title animate-on-scroll">Our Legal Services</h2>
@@ -137,6 +137,317 @@
             </div>
         </div>
     </section>
+    <!-- Services Section End-->
+       <!-- About Us Section -->
+    <section class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="about-image animate-on-scroll">
+                        <img src="assets/images/computer-screen-with-blue-background-with-blue-light-it.jpg" alt="Our Law Firm Team" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="page-intro page-intro--curves">
+                        <h2 class="page-intro__heading heading--2 animate-on-scroll">Great legal thinking, sound advice and a reliable team.</h2>
+                        <div class="wysiwyg animate-on-scroll" id="page-intro-content">
+                            <h3 class="heading--copy heading--5">We are a modern law firm.</h3>
+                            <p>We thrive on finding innovative solutions quickly, effectively and thoroughly based on a deep understanding of our clients.</p>
+                            <p>When you engage our firm you work with a team of experts who listen with compassion and engage with authority. Around the clock we keep listening, thinking and solving issues that other law firms pass over.</p>
+                        </div>
+                        <div class="u-mt animate-on-scroll">
+                            <a href="#" class="button button--medium">
+                                Discover more about our firm
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <style>
+    /* About Us Section */
+.about-section {
+    background: linear-gradient(135deg, rgba(46, 26, 71, 0.9) 0%, rgba(0, 201, 177, 0.7) 100%), url('https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 6rem 0;
+    border-radius: 10rem 1rem 10rem 1rem;
+}
+
+.about-image {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    border-radius: 4rem 0 0 0;
+}
+
+.about-image:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    transition: all 0.4s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+.page-intro--curves {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.page-intro--curves:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 4px;
+    height: 120px;
+    background: var(--highlight);
+    border-radius: 2px;
+}
+
+.page-intro__heading {
+    color: white;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.heading--copy {
+    color: var(--highlight);
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.wysiwyg {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.wysiwyg p {
+    margin-bottom: 1.5rem;
+}
+
+.u-mt {
+    margin-top: 2.5rem;
+}
+
+.button--medium {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: white;
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+.button--medium:hover {
+    background-color: #e55a2b;
+    border-color: #e55a2b;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-intro__heading {
+        font-size: 2rem;
+    }
+    
+    .page-intro--curves {
+        padding-left: 1rem;
+    }
+    
+    .page-intro--curves:before {
+        height: 80px;
+    }
+    
+    .about-image {
+        margin-bottom: 2rem;
+    }
+}
+   </style>
+    <!-- Attorneys / Our Legal Team Section start-->
+    <!-- <section class="attorneys-section py-5">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Our Legal Team</h2>
+            <p class="text-center mb-5 animate-on-scroll" style="max-width: 700px; margin: 0 auto; color: #555; font-size: 1.1rem;">
+                Meet our experienced attorneys dedicated to providing exceptional legal representation with integrity and expertise.
+            </p>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="attorney-card animate-on-scroll">
+                        <div class="attorney-img">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Sarah Johnson">
+                            <div class="attorney-overlay">
+                                <div class="attorney-social">
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="attorney-info">
+                            <h3>Sarah Johnson</h3>
+                            <p class="attorney-role">Senior Partner - Corporate Law</p>
+                            <p class="attorney-bio">With over 15 years of experience in corporate law, Sarah specializes in mergers and acquisitions.</p>
+                            <div class="attorney-contact">
+                                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                                <p><i class="fas fa-envelope"></i> sarah@lawfirm.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="attorney-card animate-on-scroll">
+                        <div class="attorney-img">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Michael Chen">
+                            <div class="attorney-overlay">
+                                <div class="attorney-social">
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="attorney-info">
+                            <h3>Michael Chen</h3>
+                            <p class="attorney-role">Partner - Litigation</p>
+                            <p class="attorney-bio">Michael has successfully represented clients in complex civil litigation cases for 12 years.</p>
+                            <div class="attorney-contact">
+                                <p><i class="fas fa-phone"></i> (555) 123-4568</p>
+                                <p><i class="fas fa-envelope"></i> michael@lawfirm.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="attorney-card animate-on-scroll">
+                        <div class="attorney-img">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Emily Rodriguez">
+                            <div class="attorney-overlay">
+                                <div class="attorney-social">
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="attorney-info">
+                            <h3>Emily Rodriguez</h3>
+                            <p class="attorney-role">Partner - Real Estate</p>
+                            <p class="attorney-bio">Emily brings 10 years of expertise in real estate transactions and property disputes.</p>
+                            <div class="attorney-contact">
+                                <p><i class="fas fa-phone"></i> (555) 123-4569</p>
+                                <p><i class="fas fa-envelope"></i> emily@lawfirm.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Attorneys / Our Legal Team Section start-->
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="row no-gutters">
+                    <div class="col-lg-5">
+                        <div class="contact-info">
+                            <h2 class="mb-4">Contact Information</h2>
+                            <div class="contact-info-item animate-on-scroll">
+                                <h3>Visit Our Office</h3>
+                                <p><i class="fas fa-map-marker-alt mr-2"></i> 123 Legal Avenue, Suite 500</p>
+                                <p>New York, NY 10001</p>
+                            </div>
+                            <div class="contact-info-item animate-on-scroll">
+                                <h3>Call Us</h3>
+                                <p><i class="fas fa-phone mr-2"></i> (555) 123-4567</p>
+                                <p><i class="fas fa-fax mr-2"></i> (555) 123-4568</p>
+                            </div>
+                            <div class="contact-info-item animate-on-scroll">
+                                <h3>Email Us</h3>
+                                <p><i class="fas fa-envelope mr-2"></i> info@lawfirm.com</p>
+                                <p><i class="fas fa-envelope mr-2"></i> support@lawfirm.com</p>
+                            </div>
+                            <div class="contact-info-item animate-on-scroll">
+                                <h3>Business Hours</h3>
+                                <p><i class="fas fa-clock mr-2"></i> Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                <p><i class="fas fa-clock mr-2"></i> Saturday: 10:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="contact-form">
+                            <h2 class="mb-4" style="color: var(--primary);">Send Us a Message</h2>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="First Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Last Name" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email Address" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="tel" class="form-control" placeholder="Phone Number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control py-1" required>
+                                        <option value="">Select Service Type</option>
+                                        <option>Corporate Law</option>
+                                        <option>Litigation</option>
+                                        <option>Real Estate</option>
+                                        <option>Intellectual Property</option>
+                                        <option>Family Law</option>
+                                        <option>Employment Law</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -183,7 +494,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 Law Firm Partners. All Rights Reserved.</p>
+                <p>&copy; 2025 Law Firm Partners. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
