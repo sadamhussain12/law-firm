@@ -12,7 +12,8 @@
   }
 
   body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  */
+      font-family: "Poppins", Sans-serif;
       color: var(--dark);
       overflow-x: hidden;
       padding-top: 0;
@@ -1004,7 +1005,7 @@
  /* /////////////////// team section styling end ///////////  */
  /* home page style End  */
 
- 
+
 /* Contact us page Main form Section start*/
 .contact-main-section {
     padding: 6rem 0;
