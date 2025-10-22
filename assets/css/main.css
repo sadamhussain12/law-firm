@@ -474,10 +474,7 @@
     z-index: 2;
 }
 
-/* Left Side Content Styling */
-.contact-left-content {
-    text-align: center;
-}
+
 
 @media (min-width: 992px) {
     .contact-left-content {
