@@ -136,7 +136,7 @@
   }
 
   .hero-section p {
-      font-size: 1.3rem;
+      font-size: 1rem;
       margin-bottom: 2.5rem;
       max-width: 700px;
       margin-left: auto;
@@ -169,17 +169,6 @@
       position: relative;
   }
 
-  .section-title:after {
-      content: '';
-      position: absolute;
-      width: 80px;
-      height: 4px;
-      background: var(--secondary);
-      bottom: -15px;
-      left: 50%;
-      transform: translateX(-50%);
-      border-radius: 2px;
-  }
 
   .service-card {
       background: white;
@@ -263,16 +252,7 @@
       display: inline-block;
   }
 
-  .footer h5:after {
-      content: '';
-      position: absolute;
-      width: 40px;
-      height: 3px;
-      background: var(--accent);
-      bottom: -8px;
-      left: 0;
-      border-radius: 2px;
-  }
+
 
   .footer ul {
       padding-left: 0;
@@ -455,7 +435,7 @@
     min-height: 650px;
     display: flex;
     align-items: center;
-    border-radius: 5rem;
+    border-radius: 10rem 1rem 10rem 1rem;
 }
 
 .contact-section::before {
@@ -466,7 +446,7 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.55);
-    border-radius: 0rem 20rem 0rem 20rem;
+        border-radius: 10rem 1rem 10rem 1rem;
 }
 
 .container.position-relative {
@@ -485,7 +465,7 @@
 .contact-left-content h1 {
     font-weight: 800;
     font-size: 3.5rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-bottom: 1.5rem;
     letter-spacing: 2px;
     color: #ffffff;
@@ -586,44 +566,12 @@
     padding: 10px;
 }
 
-/* Custom Submit Button */
-.glass-btn {
-    background: linear-gradient(135deg, var(--secondary) 0%, #e55a2b 100%);
-    border: none;
-    border-radius: 30px;
-    padding: 0.75rem 3rem;
-    font-weight: 600;
-    color: white;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    font-size: 1.1rem;
-}
 
-.glass-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(255, 107, 53, 0.4);
-}
-
-.glass-btn:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    transition: all 0.6s ease;
-}
-
-.glass-btn:hover:before {
-    left: 100%;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .contact-section {
-        padding: 4rem 0;
+        padding: 8rem 0;
         background-attachment: scroll;
         min-height: auto;
     }
@@ -808,7 +756,7 @@
 }
 
 .contact-hero-section p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-bottom: 2.5rem;
     max-width: 700px;
     margin-left: auto;
