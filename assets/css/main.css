@@ -7,7 +7,7 @@
       /* Teal */
       --light: #F8F9FA;
       --dark: #212529;
-      --highlight: #e55a2b;
+      --highlight: #00C9B1;
       /* Golden yellow */
   }
 
@@ -50,7 +50,8 @@
   }
 
   .navbar-brand span {
-      color: var(--highlight);
+      /* color: var(--highlight);  */
+      color: #60ccbf;
   }
 
   .navbar-nav .nav-link {
@@ -243,7 +244,8 @@
   }
 
   .service-card:hover .service-icon {
-      color: var(--secondary);
+      /* color: var(--secondary);  */
+      color: #60ccbf;
       transform: scale(1.1);
   }
 
@@ -273,7 +275,7 @@
   }
 
   .footer h5 {
-      color: var(--highlight);
+      color: var(--highlight); 
       margin-bottom: 1.5rem;
       font-weight: 700;
       position: relative;
@@ -364,14 +366,14 @@
       right: 30px;
       width: 50px;
       height: 50px;
-      background: var(--secondary);
+      background: var(--accent);
       color: white;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 1.2rem;
-      box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+      box-shadow: 0 4px 15px rgb(96, 204, 191);
       z-index: 1000;
       cursor: pointer;
       transition: all 0.4s ease;
@@ -385,7 +387,7 @@
   }
 
   .back-to-top:hover {
-      background: var(--accent);
+      background: var(--primary);
       transform: translateY(-5px);
   }
 
@@ -440,7 +442,7 @@
   /* discover more button style start  */
 
  .discover_button i {
-    color: #e55a2b;
+    color: #60ccbf;
     margin-left: 1rem
  }
   .discover_button {
@@ -690,7 +692,7 @@
 }
 
 .heading--copy {
-    color: var(--highlight);
+    color: var(--primary);
     font-weight: 700;
     font-size: 1.4rem;
     margin-bottom: 1.5rem;
@@ -725,11 +727,11 @@
 }
 
 .button--medium:hover {
-    background-color: #e55a2b;
+    background-color: white;
     border-color: #2e1a47;
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
-    color: white;
+    color: #2e1a47;
     text-decoration: none;
 }
 
@@ -929,7 +931,7 @@
 }
 
 .team-position {
-    color: var(--secondary);
+    color: var(--accent);
     font-weight: 600;
     margin-bottom: 1rem;
     font-size: 1rem;
