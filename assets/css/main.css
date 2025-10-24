@@ -648,7 +648,7 @@
     overflow: hidden;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     transition: all 0.4s ease;
-    border-radius: 4rem 0 0 0;
+    border-radius: 10rem 0 0 0;
 }
 
 .about-image:hover {
@@ -666,21 +666,7 @@
     transform: scale(1.05);
 }
 
-.page-intro--curves {
-    position: relative;
-    padding-left: 2rem;
-}
 
-.page-intro--curves:before {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: 0;
-    width: 4px;
-    height: 120px;
-    background: var(--highlight);
-    border-radius: 2px;
-}
 
 .page-intro__heading {
     color: white;
