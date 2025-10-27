@@ -1227,3 +1227,62 @@
     .solicitor-logo-item img { max-height: 55px; }
 }
 /* ///////// landing page solicitors section style End////////  */
+
+/* Trusted Law Firm Section Review style start*/
+.trusted-law-firm-section {
+  background: #f8f9fa;
+}
+
+.review-badge {
+  background: #fff;
+  display: inline-block;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  /* max-width: 380px;  */
+  width: 50%;
+}
+
+.review-badge:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.review-icon {
+  font-size: 1.8rem;
+  color: #00c7af;
+  font-weight: 600;
+}
+
+.review-icon i {
+  font-size: 2rem;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.brand-text {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.review-subtitle {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #777;
+  font-weight: 600;
+}
+
+.stars-row i {
+  color: #00c7af;
+  font-size: 1.3rem;
+  margin: 0 3px;
+}
+
+.review-status {
+  font-weight: 700;
+  color: #222;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+/* Trusted Law Firm Section Review style End*/
