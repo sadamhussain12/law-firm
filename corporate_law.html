@@ -55,25 +55,24 @@
         </nav>
     </header>
 
-<!-- Enhanced Corporate Law Page Content -->
-<div style="height: 60px;"></div>
-
-<section class="corporate-hero bg-primary-custom text-white" style="background: linear-gradient(135deg, #2E1A47 0%, #4A2B73 100%);">
-    <div class="container py-5">
-        <div class="row align-items-center">
-            <div class="col-lg-8">
-                <h1 class="display-4 text-white animate__animated animate__fadeInDown mb-3">Corporate Law Excellence</h1>
-                <p class="lead mb-4">Strategic legal counsel for businesses navigating complex regulatory landscapes and driving sustainable growth.</p>
-                <p class="mb-0"><a href="#" class="text-white-50">Home</a> / Practice Areas / Corporate Law</p>
+    <!-- Hero Section - Matching Home Page Style -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-badge animate__animated animate__fadeInDown">
+                <i class="fas fa-award mr-2"></i> Award-Winning Corporate Law
             </div>
-            <div class="col-lg-4 text-center">
-                <div class="hero-icon animate__animated animate__fadeInRight">
-                    <i class="fas fa-balance-scale fa-5x  opacity-25" style="color: #00c7af;"></i>
-                </div>
-            </div>
+            <h1 class="animate__animated animate__fadeIn">Corporate Law Excellence</h1>
+            <p class="animate__animated animate__fadeIn animate__delay-1s">Strategic legal counsel for businesses navigating complex regulatory landscapes and driving sustainable growth.</p>
+            <a href="#" class="button button--medium animate__fadeInUp animate__delay-2s">Schedule a Consultation</a>
+            <nav aria-label="breadcrumb" class="breadcrumb animate__fadeIn animate__delay-1s">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Practice Areas</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Corporate Law</li>
+                </ol>
+            </nav>
         </div>
-    </div>
-</section>
+    </section>
 
 <section class="section" style="padding: 6rem 0;">
     <div class="container">
@@ -328,15 +327,31 @@
 <style>
 /* Corporate Law Page Specific Styles */
 .corporate-hero {
-    padding: 5rem 0;
-    position: relative;
-    overflow: hidden;
+    background: linear-gradient(135deg, var(--primary) 0%, #4A2B73 100%);
+            padding: 120px 0 80px;
+            color: white;
+            position: relative;
+            overflow: hidden;
 }
 
 .hero-icon {
     opacity: 0.7;
 }
-
+  .breadcrumb {
+            font-size: 0.9rem;
+            background: transparent;
+            padding: 0;
+            margin-top: 20px;
+        }
+        
+        .breadcrumb a {
+            color: rgb(46, 26, 72);
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            color: white;
+        }
 .section-title-corporate {
     color: #2E1A47;
     padding-bottom: 0.5rem;
@@ -519,32 +534,7 @@
 }
 </style>
 
-<script>
-// Animation on scroll for corporate law page
-$(document).ready(function() {
-    // Animate elements on scroll
-    function animateOnScroll() {
-        $('.animate-on-scroll').each(function() {
-            var elementTop = $(this).offset().top;
-            var elementBottom = elementTop + $(this).outerHeight();
-            var viewportTop = $(window).scrollTop();
-            var viewportBottom = viewportTop + $(window).height();
-            
-            if (elementBottom > viewportTop && elementTop < viewportBottom) {
-                $(this).addClass('animated');
-            }
-        });
-    }
-    
-    // Initial check
-    animateOnScroll();
-    
-    // Check on scroll
-    $(window).on('scroll', function() {
-        animateOnScroll();
-    });
-});
-</script>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
