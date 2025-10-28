@@ -1285,4 +1285,10 @@
   font-size: 1.1rem;
   letter-spacing: 1px;
 }
+@media (max-width: 767.98px) {
+  .review-badge {
+    width: 100%;
+  }
+}
+
 /* Trusted Law Firm Section Review style End*/
