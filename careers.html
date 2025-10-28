@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Law Firm</title>
+    <!-- Bootstrap 4.6.2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- main css  -->
+    <link rel="stylesheet" href="assets/css/main.css">
+<style>
+/* Careers Page Specific Styles */
+        .careers-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1573496529574-be85d6a60704?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            height: 60vh;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+
+        .careers-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .careers-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .values-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .value-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: #60ccbf;
+        }
+
+        .benefits-section {
+            padding: 80px 0;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+
+        .benefit-icon {
+            font-size: 1.5rem;
+            color: #60ccbf;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .open-positions {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .position-card {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .position-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .position-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .position-body {
+            padding: 1.5rem;
+        }
+
+        .position-tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background-color: #e9ecef;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .application-section {
+            padding: 80px 0;
+        }
+
+        .application-form {
+            background-color: #2e1a47;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .form-control {
+            border-radius: 4px;
+            padding: 0.75rem 1rem;
+            border: 1px solid #ddd;
+        }
+
+        .form-control:focus {
+            border-color: #60ccbf;
+            box-shadow: 0 0 0 0.2rem rgba(96, 204, 191, 0.25);
+        }
+
+        .file-upload {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .file-upload-btn {
+            border: 1px dashed #ccc;
+            color: #666;
+            background-color: #f8f9fa;
+            padding: 12px 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .file-upload-btn:hover {
+            background-color: #e9ecef;
+        }
+
+        .file-upload-input {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .file-name {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .careers-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+    <!-- Back to top button -->
+    <a href="#top" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Law<span> | Firm</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about_section">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#our_services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#attorneys_section">Attorneys</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="careers.html">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact_us.html">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="contact_us.html" class="btn btn-primary ml-lg-3 mt-2 mt-lg-0">Free Consultation</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Careers Hero Section -->
+    <section class="careers-hero">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown">Build Your Career With Us</h1>
+            <p class="animate__animated animate__fadeIn animate__delay-1s">Join our award-winning team of legal
+                professionals and grow your career in a supportive, innovative environment.</p>
+            <a href="#positions" class="btn btn-primary animate__animated animate__fadeInUp animate__delay-2s">View Open
+                Positions</a>
+        </div>
+    </section>
+
+    <!-- Why Work With Us Section -->
+    <section class="values-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Why Work With Us</h2>
+            <p class="section-subtitle animate-on-scroll">We foster a culture of excellence, collaboration, and
+                professional growth</p>
+            <div class="row">
+                <div class="col-md-4 mt-3">
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Work-Life Balance</h3>
+                        <p>We promote a healthy balance through flexible schedules and wellness support for our team.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-3">
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Collaborative Culture</h3>
+                        <p>Work alongside experienced attorneys in a supportive environment that values teamwork and
+                            knowledge sharing.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3>Meaningful Work</h3>
+                        <p>Tackle challenging cases and make a real difference in our clients' lives with meaningful
+                            legal work.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h2 class="section-title text-left animate-on-scroll">Employee Benefits</h2>
+                    <p class="mb-4 animate-on-scroll">We offer a comprehensive benefits package designed to support our
+                        team's wellbeing and professional growth.</p>
+
+                    <div class="benefit-item animate-on-scroll">
+                        <div class="benefit-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div>
+                            <h4>Competitive Compensation</h4>
+                            <p>Attractive salary packages with performance-based bonuses and incentives.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item animate-on-scroll">
+                        <div class="benefit-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div>
+                            <h4>Health & Wellness</h4>
+                            <p>Comprehensive medical, dental, and vision insurance for you and your family.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item animate-on-scroll">
+                        <div class="benefit-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div>
+                            <h4>Retirement Planning</h4>
+                            <p>401(k) plan with company matching to help you plan for the future.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item animate-on-scroll">
+                        <div class="benefit-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div>
+                            <h4>Work-Life Balance</h4>
+                            <p>Flexible work arrangements and generous paid time off policies.</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item animate-on-scroll">
+                        <div class="benefit-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div>
+                            <h4>Continuing Education</h4>
+                            <p>Financial support for professional development and bar association memberships.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="about-image animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Our Team Working Together" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Positions Section -->
+    <section class="open-positions" id="positions">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Open Positions</h2>
+            <p class="section-subtitle animate-on-scroll">Explore current opportunities to join our legal team</p>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="position-card animate-on-scroll">
+                        <div class="position-header">
+                            <h3>Associate Attorney - Corporate Law</h3>
+                            <div class="d-flex flex-wrap mt-2">
+                                <span class="position-tag">Full-time</span>
+                                <span class="position-tag">New York</span>
+                                <span class="position-tag">3+ years experience</span>
+                            </div>
+                        </div>
+                        <div class="position-body">
+                            <p>We're seeking a motivated Associate Attorney to join our growing Corporate Law practice.
+                                The ideal candidate will have experience in business formation, contracts, and M&A
+                                transactions.</p>
+                            <div class="mt-4">
+                                <a href="#apply" class="btn btn-primary">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="position-card animate-on-scroll">
+                        <div class="position-header">
+                            <h3>Litigation Paralegal</h3>
+                            <div class="d-flex flex-wrap mt-2">
+                                <span class="position-tag">Full-time</span>
+                                <span class="position-tag">Chicago</span>
+                                <span class="position-tag">2+ years experience</span>
+                            </div>
+                        </div>
+                        <div class="position-body">
+                            <p>Our litigation team is looking for a detail-oriented Paralegal to support case
+                                preparation, document management, and trial preparation for complex civil litigation
+                                matters.</p>
+                            <div class="mt-4">
+                                <a href="#apply" class="btn btn-primary">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="position-card animate-on-scroll">
+                        <div class="position-header">
+                            <h3>Legal Secretary - Family Law</h3>
+                            <div class="d-flex flex-wrap mt-2">
+                                <span class="position-tag">Full-time</span>
+                                <span class="position-tag">Los Angeles</span>
+                                <span class="position-tag">1+ years experience</span>
+                            </div>
+                        </div>
+                        <div class="position-body">
+                            <p>Join our Family Law practice as a Legal Secretary, providing administrative support to
+                                attorneys, managing client communications, and assisting with case file organization.
+                            </p>
+                            <div class="mt-4">
+                                <a href="#apply" class="btn btn-primary">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="position-card animate-on-scroll">
+                        <div class="position-header">
+                            <h3>Summer Law Clerk</h3>
+                            <div class="d-flex flex-wrap mt-2">
+                                <span class="position-tag">Internship</span>
+                                <span class="position-tag">Multiple Locations</span>
+                                <span class="position-tag">Law Student</span>
+                            </div>
+                        </div>
+                        <div class="position-body">
+                            <p>Our summer clerk program offers law students hands-on experience across multiple practice
+                                areas, mentorship from senior attorneys, and opportunities to work on real client
+                                matters.</p>
+                            <div class="mt-4">
+                                <a href="#apply" class="btn btn-primary">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Section -->
+    <section class="application-section" id="apply">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="application-form animate-on-scroll">
+                        <h2 class="text-center mb-4 text-white">Apply Now</h2>
+                        <p class="text-center mb-5 text-white">Submit your application and we'll be in touch shortly</p>
+
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="position" class="form-label">Position Applying For *</label>
+                                <select class="form-control py-1" id="position" required>
+                                    <option value="">Select a position</option>
+                                    <option>Associate Attorney - Corporate Law</option>
+                                    <option>Litigation Paralegal</option>
+                                    <option>Legal Secretary - Family Law</option>
+                                    <option>Summer Law Clerk</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="coverLetter" class="form-label">Cover Letter *</label>
+                                <textarea class="form-control" id="coverLetter" rows="4"
+                                    placeholder="Tell us why you're interested in this position and what you would bring to our team..."
+                                    required></textarea>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label">Upload Your Resume *</label>
+                                <div class="file-upload">
+                                    <div class="file-upload-btn">
+                                        <i class="fas fa-cloud-upload-alt mr-2"></i> Choose File
+                                    </div>
+                                    <input type="file" class="file-upload-input" id="resume" accept=".pdf,.doc,.docx"
+                                        required>
+                                </div>
+                                <div class="file-name" id="resumeFileName">No file chosen</div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label">Additional Documents (Optional)</label>
+                                <div class="file-upload">
+                                    <div class="file-upload-btn">
+                                        <i class="fas fa-cloud-upload-alt mr-2"></i> Choose Files
+                                    </div>
+                                    <input type="file" class="file-upload-input" id="additionalDocs" multiple>
+                                </div>
+                                <div class="file-name" id="additionalFileName">No files chosen</div>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit Application</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <div class="footer-logo">Law<span> | Firm</span></div>
+                    <p>Providing exceptional legal services with integrity, dedication, and a commitment to client
+                        success since 1990.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="index.html#about_section"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="index.html#our_services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="index.html#attorneys_section"><i class="fas fa-chevron-right"></i> Attorneys</a>
+                        </li>
+                        <li><a href="contact_us.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Practice Areas</h5>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Corporate Law</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Litigation</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Real Estate</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Intellectual Property</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Family Law</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact Us</h5>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> 123 Legal Avenue, Suite 500</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> (555) 123-4567</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> info@lawfirm.com</a></li>
+                        <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9am-6pm</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Law Firm Partners. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script>
+        // File upload display
+        document.getElementById('resume').addEventListener('change', function (e) {
+            const fileName = e.target.files[0] ? e.target.files[0].name : 'No file chosen';
+            document.getElementById('resumeFileName').textContent = fileName;
+        });
+
+        document.getElementById('additionalDocs').addEventListener('change', function (e) {
+            const fileCount = e.target.files.length;
+            const fileName = fileCount > 0 ? `${fileCount} file(s) chosen` : 'No files chosen';
+            document.getElementById('additionalFileName').textContent = fileName;
+        });
+
+        // Scroll animation
+        document.addEventListener('DOMContentLoaded', function () {
+            const animateElements = document.querySelectorAll('.animate-on-scroll');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animated');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            animateElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+
+</html>
