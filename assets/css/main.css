@@ -1292,3 +1292,197 @@
 }
 
 /* Trusted Law Firm Section Review style End*/
+
+/* coorporate law page style start  */
+.corporate-hero {
+    background: linear-gradient(135deg, var(--primary) 0%, #4A2B73 100%);
+            padding: 120px 0 80px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+}
+
+.hero-icon {
+    opacity: 0.7;
+}
+.section-title-corporate {
+    color: #2E1A47;
+    padding-bottom: 0.5rem;
+    /* border-bottom: 2px solid #FFD166;  */
+    display: inline-block;
+}
+
+.corporate-features .feature-item {
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.corporate-features .feature-item:hover {
+    background-color: #F8F9FA;
+    transform: translateY(-5px);
+}
+
+.corporate-expertise li {
+    padding: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.corporate-expertise li:hover {
+    background-color: #F8F9FA;
+}
+
+.corporate-quote {
+    border-left: 4px solid #2e1a47;
+    background-color: #F8F9FA;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.corporate-quote:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.practice-area-link {
+    color: #2E1A47;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.practice-area-link:hover {
+    background-color: #2e1a47;
+    color: white;
+    transform: translateX(5px);
+}
+
+.stats-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #00C9B1;
+}
+
+.attorney-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.attorney-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.attorney-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid #00c9b1;
+}
+
+.attorney-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.attorney-name {
+    color: #2E1A47;
+    font-weight: 600;
+}
+
+.social-link {
+    color: #00c9b1;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    color: #2E1A47;
+    transform: translateY(-3px);
+}
+
+/* Process Timeline */
+.process-timeline {
+    position: relative;
+}
+
+.process-timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #2E1A47;
+}
+
+.process-step {
+    display: flex;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: #00c7af;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 2rem;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+.step-content {
+    padding-top: 0.5rem;
+}
+
+.step-content h4 {
+    color: #2E1A47;
+    margin-bottom: 0.5rem;
+}
+
+/* Animation classes */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.animate-on-scroll.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .process-timeline::before {
+        left: 25px;
+    }
+    
+    .step-number {
+        width: 50px;
+        height: 50px;
+        margin-right: 1.5rem;
+    }
+    
+    .corporate-features .feature-item {
+        padding: 1rem;
+    }
+    
+    .corporate-hero {
+        padding: 3rem 0;
+    }
+}
+/* coorporate law page style End  */
