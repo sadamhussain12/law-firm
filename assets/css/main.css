@@ -456,7 +456,7 @@
     background: linear-gradient(135deg, 
                 rgba(46, 26, 71, 0.85) 0%, 
                 rgba(0, 201, 177, 0.8) 100%),
-                url('https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+                url('../images/photo-1560518883-ce09059eeffa.avif') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -744,7 +744,7 @@
 /* ////////////// contact us form section style  //////////////  */
 /* Contact Hero Section - Matching Homepage Style */
 .contact-hero-section {
-    background: linear-gradient(135deg, rgba(46, 26, 71, 0.9) 0%, rgba(0, 201, 177, 0.7) 100%), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+    background: linear-gradient(135deg, rgba(46, 26, 71, 0.9) 0%, rgba(0, 201, 177, 0.7) 100%), url('../images/photo-1589391886645-d51941baf7fb.avif') no-repeat center center;
     background-size: cover;
     color: white;
     padding: 10rem 0 8rem;
@@ -1486,3 +1486,175 @@
     }
 }
 /* coorporate law page style End  */
+
+/* Careers Page Specific Styles */
+        .careers-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/photo-1573496529574-be85d6a60704.avif') center/cover no-repeat;
+            height: 60vh;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+
+        .careers-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .careers-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .values-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .value-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: #60ccbf;
+        }
+
+        .benefits-section {
+            padding: 80px 0;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+
+        .benefit-icon {
+            font-size: 1.5rem;
+            color: #60ccbf;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .open-positions {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .position-card {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .position-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .position-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .position-body {
+            padding: 1.5rem;
+        }
+
+        .position-tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background-color: #e9ecef;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .application-section {
+            padding: 80px 0;
+        }
+
+        .application-form {
+            background-color: #2e1a47;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .form-control {
+            border-radius: 4px;
+            padding: 0.75rem 1rem;
+            border: 1px solid #ddd;
+        }
+
+        .form-control:focus {
+            border-color: #60ccbf;
+            box-shadow: 0 0 0 0.2rem rgba(96, 204, 191, 0.25);
+        }
+
+        .file-upload {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .file-upload-btn {
+            border: 1px dashed #ccc;
+            color: #666;
+            background-color: #f8f9fa;
+            padding: 12px 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .file-upload-btn:hover {
+            background-color: #e9ecef;
+        }
+
+        .file-upload-input {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .file-name {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .careers-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
