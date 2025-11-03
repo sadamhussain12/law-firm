@@ -46,3 +46,17 @@
         $('.navbar-nav>li>a').on('click', function(){
             $('.navbar-collapse').collapse('hide');
         });
+
+        ////// career page script start ///////
+               // File upload display
+        document.getElementById('resume').addEventListener('change', function (e) {
+            const fileName = e.target.files[0] ? e.target.files[0].name : 'No file chosen';
+            document.getElementById('resumeFileName').textContent = fileName;
+        });
+
+        document.getElementById('additionalDocs').addEventListener('change', function (e) {
+            const fileCount = e.target.files.length;
+            const fileName = fileCount > 0 ? `${fileCount} file(s) chosen` : 'No files chosen';
+            document.getElementById('additionalFileName').textContent = fileName;
+        });
+        ////// career page script End ///////
